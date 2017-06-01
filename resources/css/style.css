@@ -1,0 +1,86 @@
+/* Rem basis ================================================================ */
+
+html {
+    font-size: 12px;
+}
+
+/* Standard element styling ================================================= */
+
+body {
+    /*positioning & display*//*box-model*/
+    margin: 0;
+    padding: 0;
+    /*styling*/
+    color: #333;
+    background-color: #fb83fa;
+    /*typography*/
+    font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+p, a {
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    /*border: 1px solid #666;*/
+    border-top: 1px solid #fb83fa;
+    border-right: 2px solid #fb83fa;
+    border-bottom: 1px solid #666;
+    border-left: 2px solid #666;
+    margin: -1rem 0 0;
+}
+
+h1, h3 {
+    line-height: 2.25;
+    margin: 1rem 0;
+}
+
+/* image links: ../images/ */
+
+.sitecontainer {
+    background: #ffa84c; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffa84c 0%, #ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffa84c 0%, #ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    min-width: 20rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3px 50px #666;
+}
+
+/* Header ====================================================================*/
+
+header {
+    text-align: center;
+}
+
+/* Navigation ================================================================*/
+
+nav {
+}
+
+/* Main Section ==============================================================*/
+
+#main {
+}
+
+/* Footer ====================================================================*/
+
+footer {
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* @media ====================================================================*/
+
+@media only screen and (max-width: 1024px) {
+}
