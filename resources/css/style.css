@@ -51,6 +51,10 @@ ol li:hover {
     transition: all 250ms ease-out 105ms;
 }
 
+ol li {
+    margin: 0 1.75rem 0 0;
+}
+
 a:active {
     color: purple;
     transition: all 250ms ease-in-out;
@@ -58,7 +62,7 @@ a:active {
 
 h1, h3 {
     line-height: 2.25;
-    margin: 1rem 0;
+    margin: 1rem;
     text-align: center;
 }
 
