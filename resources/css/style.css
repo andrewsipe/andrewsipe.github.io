@@ -16,29 +16,59 @@ body {
     /*typography*/
     font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.65;
 }
 
 p, a {
-    font-family: 'PT Serif', serif;
     font-size: 1rem;
-    line-height: 1.65;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: .5rem;
+    color: #222;
+    text-decoration: none;
 }
 
-hr {
-    /*border: 1px solid #666;*/
-    border-top: 1px solid #fb83fa;
-    border-right: 2px solid #fb83fa;
-    border-bottom: 1px solid #666;
-    border-left: 2px solid #666;
-    margin: -1rem 0 0;
+span {
+    font-weight: 600;
+    color: #333;
+    background-color: #ff7b0d;
+}
+
+a:hover {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: box-shadow 500ms ease-out 105ms;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    margin: 0 .5rem 0 -5px;
+    -webkit-box-shadow: -35px 0 0 purple;
+            box-shadow: -35px 0 0 purple;
+}
+
+ol li:hover {
+    list-style-type: none;
+    transition: all 250ms ease-out 105ms;
+}
+
+a:active {
+    color: purple;
+    transition: all 250ms ease-in-out;
 }
 
 h1, h3 {
     line-height: 2.25;
     margin: 1rem 0;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 1px solid #666;
+    margin: -1rem 0 0;
+}
+
+ol {
+    margin: .5rem 0 2rem 0;
 }
 
 /* image links: ../images/ */
@@ -82,5 +112,5 @@ footer {
 
 /* @media ====================================================================*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 100px) {
 }
