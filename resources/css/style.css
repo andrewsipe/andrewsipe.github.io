@@ -17,7 +17,7 @@ body {
     /*styling*/
     color: #333;
     background-color: #fb83fa;
-    background: linear-gradient(#ff13fb, #ff00ff);
+    background-color: linear-gradient(#fb83fa, #ff00fb);
     /*typography*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
