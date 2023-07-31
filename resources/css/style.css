@@ -15,9 +15,8 @@ body {
     margin: 0;
     padding: 0;
     /*styling*/
-    color: #333;
-    background-color: #fb83fa;
-    background-color: linear-gradient(#fb83fa, #ff00fb);
+    color: #666666;
+    background-color: #560dff;
     /*typography*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -77,6 +76,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 3em;
+    color: #ffddcc;
 }
 
 h2 {
