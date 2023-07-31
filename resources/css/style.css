@@ -84,7 +84,7 @@ ol {
 .sitecontainer {
     background: #ffa84c; /* Old browsers */
     background: linear-gradient(top, #ffa84c 0%, #ff7b0d 100%);
-    min-width: 20em;
+    width: 30em;
     border-radius: 1em;
     position: absolute;
     top: 50%;
