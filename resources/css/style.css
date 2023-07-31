@@ -45,7 +45,7 @@ a:hover {
     font-weight: 700;
     text-decoration: none;
     transition: box-shadow 500ms ease-out 105ms;
-    border-left: 5px solid #0fb3ff;
+    border-left: 3px solid #0fb3ff;
     margin: 0 .5em 0 -5px;
     box-shadow: -35px 0 0 #0fb3ff;
 }
