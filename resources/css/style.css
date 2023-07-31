@@ -65,7 +65,7 @@ a:active {
 }
 
 h1, h2, h3 {
-    line-height: 2.25;
+    line-height: 1.75;
     margin: 1em;
     text-align: center;
 }
@@ -91,8 +91,8 @@ ol {
 /* image links: ../images/ */
 
 .sitecontainer {
-    background: linear-gradient(#ff7b0d, #ffa84c);
     background: #ffa84c; /* Old browsers */
+    background: linear-gradient(#ff7b0d, #ffa84c);
     width: 30em;
     border-radius: 1em;
     position: absolute;
