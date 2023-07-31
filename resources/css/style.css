@@ -50,6 +50,10 @@ a:hover {
     box-shadow: -35px 0 0 purple;
 }
 
+li {
+    list-style: bullet;
+}
+
 ol li:hover {
     list-style-type: none;
     transition: all 250ms ease-out 105ms;
