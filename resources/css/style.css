@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     /*styling*/
-    color: #666666;
+    color: #333;
     background-color: #0d92ff;
     /*typography*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -30,7 +30,7 @@ p, a {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: .5em;
-    color: #222;
+    color: #333;
     text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ ol {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 3px 50px #666;
+    box-shadow: 0 3px 50px #333;
 }
 
 /* Header ====================================================================*/
