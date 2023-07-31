@@ -45,9 +45,9 @@ a:hover {
     font-weight: 700;
     text-decoration: none;
     transition: box-shadow 500ms ease-out 105ms;
-    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid #333;
     margin: 0 .5em 0 -5px;
-    box-shadow: -35px 0 0 purple;
+    box-shadow: -35px 0 0 #0fb3ff;
 }
 
 li {
@@ -64,7 +64,7 @@ ol li {
 }
 
 a:active {
-    color: purple;
+    color: #053c69;
     transition: all 250ms ease-in-out;
 }
 
@@ -75,7 +75,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    background: linear-gradient(#eee, #053c69);
+    background: linear-gradient(#052069, #053c69);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3em;
