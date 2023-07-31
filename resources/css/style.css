@@ -51,7 +51,7 @@ a:hover {
 }
 
 li {
-    list-style: bullet;
+    list-style: disc;
 }
 
 ol li:hover {
