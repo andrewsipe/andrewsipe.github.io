@@ -75,8 +75,10 @@ h1, h2, h3 {
 }
 
 h1 {
+    background: linear-gradient(#eee, #053c69);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3em;
-    color: #053c69;
 }
 
 h2 {
