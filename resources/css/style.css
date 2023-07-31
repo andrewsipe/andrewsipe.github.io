@@ -16,7 +16,7 @@ body {
     padding: 0;
     /*styling*/
     color: #333;
-    background-color: #053c69;
+    background-color: #0fb3ff;
     /*typography*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -76,7 +76,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 3em;
-    color: #5a079e;
+    color: #053c69;
 }
 
 h2 {
