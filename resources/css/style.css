@@ -70,7 +70,7 @@ a:active {
 
 h1, h2, h3 {
     line-height: 1.75;
-    margin-bottom: 1em;
+    margin: 1em 0;
     text-align: center;
 }
 
