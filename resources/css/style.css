@@ -16,7 +16,8 @@ body {
     padding: 0;
     /*styling*/
     color: #333;
-    background-color: #0fb3ff;
+    background: rgb(29,162,197);
+    background: linear-gradient(0deg, rgba(29,162,197,1) 0%, rgba(92,52,148,1) 60%, rgba(187,18,100,1) 90%);
     /*typography*/
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 1em;
