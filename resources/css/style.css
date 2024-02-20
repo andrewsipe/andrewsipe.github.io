@@ -140,7 +140,7 @@ li>a:hover {
 
 li>a:active {
     transition: all 50ms linear;
-    color: var(--color-5);
+    color: var(--color-1);
 }
 
 .icon {
@@ -153,7 +153,7 @@ li>a:active {
 }
 
 #inner {
-    fill: var(--color-5);
+    fill: var(--color-1);
     opacity: 0;
 }
 
@@ -174,11 +174,11 @@ li>a:active {
         opacity: 0%;}
     #outer {
         transition: all 50ms linear;
-        fill: var(--color-5);}
+        fill: var(--color-1);}
 }
 
 .c {
-    color: var(--color-5);
+    color: var(--color-2);
     font-weight: 300;
 }
 footer {
