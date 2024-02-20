@@ -96,7 +96,8 @@ header {
     text-decoration: none;
 }
 
-.logo:any-link {
+.logo {
+    transition: all 500ms linear;
     border-top: .5px solid var(--color-cream);
     border-bottom: .5px solid var(--color-cream);
     padding: 5px var(--fs-2);
@@ -106,10 +107,6 @@ header {
     letter-spacing: 8px;
     text-indent: 8px;
     white-space: nowrap;
-}
-
-.logo, .logo:active {
-    transition: all 500ms linear;
 }
 
 .logo:hover {
