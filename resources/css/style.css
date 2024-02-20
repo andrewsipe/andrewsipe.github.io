@@ -58,12 +58,12 @@ p, a {
 
 a:hover {
     transition: all 500ms linear;
-    text-decoration: 1.5px solid underline var(--color-1);
+    text-decoration: 1.5px solid underline var(--color-1) !important;
 }
 
 a:active {
     transition: all 50ms linear;
-    text-decoration: 1.5px solid underline var(--color-1);
+    text-decoration: 1.5px solid underline var(--color-1) !important;
     color: var(--color-1)
 }
 
