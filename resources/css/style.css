@@ -92,7 +92,7 @@ header {
     vertical-align: baseline;
 }
 
-.logo>a, a:hover, a:active {
+.logo>a a:hover a:active {
     text-decoration: none;
 }
 
