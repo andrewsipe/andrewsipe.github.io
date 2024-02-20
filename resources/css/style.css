@@ -56,6 +56,17 @@ p, a {
     color: var(--color-darkgrey);
 }
 
+a:hover {
+    transition: all 500ms linear;
+    text-decoration: 1.5px solid underline var(--color-1);
+}
+
+a:active {
+    transition: all 50ms linear;
+    text-decoration: 1.5px solid underline var(--color-1);
+    color: var(--color-1)
+}
+
 em {
     font-style: italic;
     font-size: var(--fs-half);
@@ -79,6 +90,10 @@ header {
     align-items: center;
     min-height: 60px;
     vertical-align: baseline;
+}
+
+.logo>a, a:hover, a:active {
+    text-decoration: none;
 }
 
 .logo:any-link {
@@ -131,16 +146,6 @@ ul {
 
 li {
     list-style: none;
-}
-
-li>a:hover {
-    transition: all 500ms linear;
-    text-decoration: 1.5px solid underline var(--color-5);
-}
-
-li>a:active {
-    transition: all 50ms linear;
-    color: var(--color-1);
 }
 
 .icon {
