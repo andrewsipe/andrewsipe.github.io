@@ -51,21 +51,15 @@ body {
       background: linear-gradient(180deg, rgb(5, 173, 255), rgb(130, 214, 255), rgb(255, 255, 255));
 }
 
-p, a {
-    text-decoration: none;
+p {
     color: var(--color-darkgrey);
 }
 
-a:hover {
-    transition: all 500ms linear;
-    text-decoration: 1.5px solid underline var(--color-1) !important;
+a {
+    color: var(--color-darkgrey);
+    text-decoration: none;
 }
 
-a:active {
-    transition: all 50ms linear;
-    text-decoration: 1.5px solid underline var(--color-1) !important;
-    color: var(--color-1)
-}
 
 em {
     font-style: italic;
@@ -92,11 +86,8 @@ header {
     vertical-align: baseline;
 }
 
-.logo>a a:hover a:active {
+a.logo {
     text-decoration: none;
-}
-
-.logo {
     transition: all 500ms linear;
     border-top: .5px solid var(--color-cream);
     border-bottom: .5px solid var(--color-cream);
@@ -110,12 +101,26 @@ header {
 }
 
 .logo:hover {
+    text-decoration: none;
     transition: all 500ms linear;
     color: var(--color-darkgrey);
     font-weight: 900;
     letter-spacing: 10px;
     text-indent: 10px;
     padding: 0px var(--fs-1);
+}
+
+a:hover {
+    transition: all 500ms linear;
+    text-underline-offset: 2.5px;
+    text-decoration: 1.5px solid underline var(--color-1);
+}
+
+a:active {
+    transition: all 50ms linear;
+    text-underline-offset: 1.5px;
+    text-decoration: 3px solid underline var(--color-1);
+    color: var(--color-1)
 }
 
 .portfolio {
