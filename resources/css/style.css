@@ -4,19 +4,21 @@
     --fs-1: clamp(1rem, 1vw, 3rem);
     --fs-2: calc(var(--fs-1)*1.5);
     --fs-half: calc(var(--fs-1)*.75);
-    --lh-1: clamp(1.5, 1.65, 2);
-    --color-1: rgba(15, 173, 255, 1);
-    --color-2: rgba(92, 52, 148, 1);
-    --color-3: rgba(186, 18, 99, 1);
-    --color-darkgrey: rgba(45, 50, 55, 1);
-    --color-cream: rgba(255, 245, 245, 1);
+    --lh-1: clamp(1.65, 1.85, 2);
+    --lh-2: calc(var(--lh-1)*2);
+    --color-orange: hsla(25, 100%, 55%, 1.0);
+    --color-violet: hsla(250, 100%, 50%, 1.0);
+    --color-blue: hsla(210, 100%, 60%, 1.0);
+    --color-bluegrey: hsla(210, 100%, 10%, 1.0);
+    --color-cream: hsla(20, 100%, 97%, 1.0);
 
     font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: var(--fs-1);
     line-height: var(--lh-1);
     letter-spacing: -0.005rem;
-    font-size: var(--fs-1);
-    color: var(--color-darkgrey);
+    color: var(--color-bluegrey);
 }
+
 
 /*Universal Box-model*/
 *, *::before, *::after {
@@ -28,14 +30,15 @@
     padding: 0;
 }
 
+
 body, html {
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    font-size: var(--fs-1);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-kerning: auto;
+    min-height: 100vh;
 }
 
 body {
@@ -48,22 +51,23 @@ body {
       ". b ."
       ". f .";
       backdrop-filter: blur(5px);
-      background: linear-gradient(180deg, rgb(5, 173, 255), rgb(130, 214, 255), rgb(255, 255, 255));
+      background: linear-gradient(to bottom, var(--color-blue) 25%, var(--color-violet) 100%);
 }
 
 p {
-    color: var(--color-darkgrey);
+    color: var(--color-bluegrey);
 }
 
 a {
-    color: var(--color-darkgrey);
+    color: var(--color-bluegrey);
     text-decoration: none;
 }
 
 
 em {
+    vertical-align: middle;
     font-style: italic;
-    font-size: var(--fs-half);
+    font-size: calc(var(--fs-1)*.85);
 }
 
 h3 {
@@ -71,8 +75,7 @@ h3 {
     font-weight: 600;
     line-height: 2;
     text-align: center;
-    border-bottom: 1px solid var(--color-3);
-    padding-bottom: .5rem;
+    border-bottom: 1.5px solid var(--color-orange);
     margin-top: .25rem;
 }
 
@@ -88,37 +91,40 @@ header {
 
 a.logo {
     text-decoration: none;
-    transition: all 500ms linear;
-    border-top: .5px solid var(--color-cream);
-    border-bottom: .5px solid var(--color-cream);
-    padding: 5px var(--fs-2);
+    transition: all 350ms ease-in;
+    border-top: .5px solid white;
+    border-bottom: .5px solid white;
+    padding: 0 25px;
     color: var(--color-cream);
     font-size: var(--fs-2);
-    font-weight: 200;
-    letter-spacing: 8px;
-    text-indent: 8px;
-    white-space: nowrap;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    text-indent: .5rem;
+    word-break: keep-all;
 }
 
 .logo:hover {
     text-decoration: none;
-    transition: all 500ms linear;
-    color: var(--color-darkgrey);
-    font-weight: 900;
-    letter-spacing: 10px;
-    text-indent: 10px;
-    padding: 0px var(--fs-1);
+    transition: all 350ms ease-in;
+    background-color: white;
+    backdrop-filter: blur(50%);
+    font-weight: 300;
+    padding: 0 27px;
+    letter-spacing: .6rem;
+    text-indent: .6rem;
+    border-radius: 1.5rem;
+    color: var(--color-bluegrey);
 }
 
 a:hover {
-    transition: all 500ms linear;
+    transition: all 50ms ease-in;
     text-underline-offset: 2.5px;
-    text-decoration: 1.5px solid underline var(--color-1);
+    text-decoration: 1.5px solid underline var(--color-orange);
 }
 
 a:active {
-    transition: all 50ms linear;
-    color: var(--color-1)
+    transition: all 50ms ease-in;
+    color: var(--color-orange)
 }
 
 .portfolio {
@@ -141,54 +147,59 @@ a:active {
 }
 
 ul {
-    padding: var(--fs-2);
+    padding: var(--fs-half);
 }
 
 li {
+    padding: 1px;
     list-style: none;
 }
 
 .icon {
     display: inline-block;
+    rotate: -45deg;
     position: relative;
     text-align: center;
-    width: calc(var(--fs-1)*.75);
+    width: var(--fs-half);
     height: 100%;
     margin-right: 5px;
 }
 
 #inner {
-    fill: var(--color-1);
+    fill: var(--color-orange);
     opacity: 0;
 }
 
 #outer {
-    fill: var(--color-darkgrey);
+    fill: var(--color-bluegrey);
 }
 
-
-.portfolio>li:hover {
+:hover>.icon {
     #inner {
-        transition: all 500ms linear;
-        opacity: 100%;}
+        transition: all 50ms ease-in;
+        opacity: 100%; }
 }
 
-.portfolio>li:active {
+:active>.icon {
     #inner {
-        transition: all 50ms linear;
-        opacity: 0%;}
+        transition: all 50ms ease-in;
+        opacity: 0%; }
     #outer {
-        transition: all 50ms linear;
-        fill: var(--color-1);}
+        transition: all 50ms ease-in;
+        fill: var(--color-orange); }
 }
 
-.c {
-    color: var(--color-2);
-    font-weight: 300;
-}
 footer {
     margin-top: var(--fs-1);
     font-size: var(--fs-half);
     grid-area: f;
     text-align: center;
+    p {
+        color: var(--color-cream);
+    }
+    .c {
+        color: var(--color-orange);
+        padding-right: 2px;
+        font-weight: 600;
+    }
 }
